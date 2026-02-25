@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-white text-neutral-900 antialiased selection:bg-primary-100 selection:text-primary-900;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  h2, h3, h4 {
+    scroll-margin-top: 5.5rem;
+  }
+  .card {
+    @apply rounded-2xl border border-neutral-100 bg-white p-4 sm:p-6 shadow-soft;
+  }
+
+  /* Typography scale (mobile-first) */
+  h1 {
+    @apply text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl;
+  }
+  h2 {
+    @apply text-xl font-bold sm:text-2xl;
+  }
+  h3 {
+    @apply text-lg font-semibold;
+  }
+
+  /* Accessible focus styles for interactive elements */
+  a:focus,
+  button:focus,
+  input:focus,
+  textarea:focus {
+    outline: 2px solid rgba(79,105,242,0.18);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 3px rgba(79,105,242,0.08);
+  }
+}
+
+@layer components {
+  .logo-text {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    letter-spacing: -0.02em;
+    @apply text-base sm:text-lg;
+  }
+
+  /* Mobile menu slide + fade (used by Navbar) */
+  .animate-fade-in-up {
+    animation: fadeInUp 220ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  /* Nav link subtle pill hover/active styles */
+  .nav-link {
+    transition: background-color .15s ease, color .15s ease, transform .08s ease;
+  }
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  background: white;
+  color: #111827;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+  z-index: 60;
+}
