@@ -9,21 +9,21 @@ export function Features() {
   return (
     <>
       <Helmet>
-        <title>Fitur | {appName}</title>
-        <meta name="description" content="Jelajahi fitur GiliranKu: pemesanan, pelacakan antrean real-time, notifikasi, dasbor admin, dan analitik." />
+        <title>Features | {appName}</title>
+        <meta name="description" content="Explore GiliranKu's features: bookings, real-time queue tracking, notifications, admin dashboard, and analytics." />
         <meta property="og:title" content={`Fitur | ${appName}`} />
-        <meta property="og:description" content="Jelajahi fitur GiliranKu: pemesanan, pelacakan antrean, notifikasi, dasbor admin, dan analitik." />
+        <meta property="og:description" content="Explore GiliranKu's features: bookings, real-time queue tracking, notifications, admin dashboard, and analytics." />
         <meta property="og:type" content="website" />
       </Helmet>
 
       <section className="bg-white px-4 pt-24 pb-12 sm:px-6 sm:pt-32 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-            Semua yang Anda Butuhkan <br className="hidden sm:block" />
-            <span className="text-primary-600">untuk Mengelola Secara Profesional.</span>
+            Everything You Need <br className="hidden sm:block" />
+            <span className="text-primary-600">to Manage Professionally.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-neutral-500 leading-relaxed">
-            GiliranKu menyediakan rangkaian alat lengkap untuk menyederhanakan operasi dan meningkatkan pengalaman pengguna.
+            GiliranKu provides a complete suite of tools to streamline operations and enhance user experience.
           </p>
         </div>
       </section>

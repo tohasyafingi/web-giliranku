@@ -3,11 +3,11 @@ import { NavLink } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
-  { to: '/', label: 'Beranda' },
-  { to: '/features', label: 'Fitur' },
-  { to: '/download', label: 'Unduh' },
-  { to: '/help', label: 'Bantuan' },
-  { to: '/about', label: 'Tentang' },
+  { to: '/', label: 'Home' },
+  { to: '/features', label: 'Features' },
+  { to: '/download', label: 'Download' },
+  { to: '/help', label: 'Help' },
+  { to: '/about', label: 'About' },
 ]
 
 export function Navbar() {
@@ -62,7 +62,7 @@ export function Navbar() {
             to="/download"
             className="hidden rounded-full bg-neutral-900 px-6 py-2.5 text-sm font-semibold text-white shadow-soft transition-all hover:bg-neutral-800 hover:shadow-soft-lg active:scale-95 sm:inline-block"
           >
-            Unduh Aplikasi
+            Download App
           </NavLink>
           <button
             type="button"
@@ -101,7 +101,7 @@ export function Navbar() {
                 className="block w-full rounded-lg bg-neutral-900 py-3 text-center text-base font-bold text-white shadow-sm"
                 onClick={() => setOpen(false)}
               >
-                Unduh Sekarang
+                Download Now
               </NavLink>
             </li>
           </ul>

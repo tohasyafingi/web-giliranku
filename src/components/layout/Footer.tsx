@@ -32,45 +32,45 @@ export function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <Link to="/features" className="text-sm text-neutral-600 transition-colors hover:text-primary-600">
-                  Fitur
+                  Features
                 </Link>
               </li>
               <li>
                 <Link to="/download" className="text-sm text-neutral-600 transition-colors hover:text-primary-600">
-                  Unduh
+                  Download
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-sm text-neutral-600 transition-colors hover:text-primary-600">
-                  Tentang Kami
+                  About Us
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400">Dukungan</h4>
+            <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400">Support</h4>
             <ul className="mt-4 space-y-3">
               <li>
                 <Link to="/help" className="text-sm text-neutral-600 transition-colors hover:text-primary-600">
-                  Pusat Bantuan & FAQ
+                  Help Center & FAQ
                 </Link>
               </li>
               <li>
                 <Link to="/privacy-policy" className="text-sm text-neutral-600 transition-colors hover:text-primary-600">
-                  Kebijakan Privasi
+                  Privacy Policy
                 </Link>
               </li>
               <li>
                 <Link to="/terms-of-service" className="text-sm text-neutral-600 transition-colors hover:text-primary-600">
-                  Syarat & Ketentuan
+                  Terms & Conditions
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400">Hubungi</h4>
+            <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400">Contact</h4>
             <div className="mt-4 space-y-4">
               {supportEmail && (
                 <a
@@ -104,11 +104,11 @@ export function Footer() {
         
         <div className="mt-8 sm:mt-16 border-t border-neutral-200 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-neutral-500">
-            © {companyYear} {companyName || appName}. Semua hak dilindungi.
+            © {companyYear} {companyName || appName}. All rights reserved.
           </p>
           <div className="flex gap-6">
-             <Link to="/privacy-policy" className="text-xs text-neutral-400 hover:text-neutral-600">Privasi</Link>
-             <Link to="/terms-of-service" className="text-xs text-neutral-400 hover:text-neutral-600">Syarat</Link>
+             <Link to="/privacy-policy" className="text-xs text-neutral-400 hover:text-neutral-600">Privacy</Link>
+             <Link to="/terms-of-service" className="text-xs text-neutral-400 hover:text-neutral-600">Terms</Link>
           </div>
         </div>
       </div>

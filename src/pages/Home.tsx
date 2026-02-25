@@ -6,16 +6,16 @@ import { FeatureCard } from '@/components/ui/FeatureCard'
 import { featuresData } from '@/data/features'
 
 const appName = import.meta.env.VITE_APP_NAME || 'GiliranKu'
-const tagline = import.meta.env.VITE_APP_TAGLINE || 'Sistem Antrian & Pemesanan Real-Time'
+const tagline = import.meta.env.VITE_APP_TAGLINE || 'Real-Time Queue & Booking System'
 
 export function Home() {
   return (
     <>
       <Helmet>
         <title>{appName} - {tagline}</title>
-        <meta name="description" content="Kelola antrean dan pemesanan secara real-time tanpa ribet. Pesan layanan, lacak posisi, dan dapatkan notifikasi saat giliran tiba." />
+        <meta name="description" content="Manage queues and bookings in real time without hassle. Book services, track your position, and receive notifications when your turn arrives." />
         <meta property="og:title" content={`${appName} - ${tagline}`} />
-        <meta property="og:description" content="Kelola antrean dan pemesanan secara real-time tanpa ribet. Pesan layanan, lacak posisi, dan dapatkan notifikasi saat giliran tiba." />
+        <meta property="og:description" content="Manage queues and bookings in real time without hassle. Book services, track your position, and receive notifications when your turn arrives." />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -35,26 +35,26 @@ export function Home() {
         
         <div className="mx-auto max-w-5xl text-center">
           <div className="mx-auto mb-8 flex max-w-fit items-center justify-center space-x-2 rounded-full border border-primary-200 bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700 shadow-sm transition-all hover:bg-primary-100">
-            <span>✨ Sekarang Beta: Pembaruan Antrian Real-Time</span>
+            <span>✨ Now in Beta: Real-Time Queue Updates</span>
           </div>
           
             <h1 className="text-5xl font-extrabold tracking-tight text-neutral-900 sm:text-6xl lg:text-7xl animate-fade-in-up leading-[1.1]">
-            Kelola Antrian & Pemesanan <br className="hidden sm:block" />
-            <span className="text-primary-600">secara Real-Time, Tanpa Ribet.</span>
+            Manage Queues & Bookings <br className="hidden sm:block" />
+            <span className="text-primary-600">in Real-Time, Without the Hassle.</span>
           </h1>
           
           <p className="mx-auto mt-8 max-w-2xl text-lg sm:text-xl text-neutral-500 animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.1s' }}>
-            Cara terbaik bagi bisnis dan pelanggan untuk mengelola reservasi layanan. 
-            Lacak giliran Anda dan terima notifikasi—semua dari browser.
+            The best way for businesses and customers to manage service reservations. 
+            Track your place in line and receive notifications—all from your browser.
           </p>
           
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <CTA variant="primary">Mulai Sekarang</CTA>
+            <CTA variant="primary">Get Started</CTA>
             <Link
               to="/features"
               className="inline-flex items-center justify-center rounded-full px-8 py-3.5 text-base font-bold text-neutral-600 transition-all border border-neutral-200 hover:bg-neutral-50 hover:border-neutral-300 active:scale-[0.97]"
             >
-              Pelajari cara kerja
+              Learn how it works
             </Link>
           </div>
         </div>
@@ -62,19 +62,19 @@ export function Home() {
 
       {/* Brief description */}
       <Section
-        title="Kenapa GiliranKu?"
-        subtitle="Solusi sederhana namun kuat bagi bisnis dan pelanggan untuk mengelola antrean dan reservasi."
+        title="Why GiliranKu?"
+        subtitle="A simple yet powerful solution for businesses and customers to manage queues and reservations."
       >
         <p className="mx-auto max-w-2xl text-center text-gray-600">
-          Baik Anda menjalankan klinik, salon, restoran, atau usaha layanan lainnya, GiliranKu membantu mengurangi waktu tunggu, meningkatkan pengalaman pelanggan, dan menjaga operasi tetap lancar. Pelanggan dapat memesan lebih awal dan melacak posisi antrean secara real-time.
+          Whether you run a clinic, salon, restaurant, or other service business, GiliranKu helps reduce wait times, enhance customer experience, and keep operations running smoothly. Customers can book ahead and track queue positions in real-time.
         </p>
       </Section>
 
       {/* Key features */}
       <Section
         id="features"
-        title="Fitur Utama"
-        subtitle="Semua yang Anda butuhkan untuk mengelola antrean dan pemesanan."
+        title="Key Features"
+        subtitle="Everything you need to manage queues and bookings."
         className="bg-gray-50"
       >
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -95,22 +95,22 @@ export function Home() {
             to="/features"
             className="text-primary-600 font-semibold hover:underline"
           >
-            Lihat semua fitur →
+            View all features →
           </Link>
         </div>
       </Section>
 
       {/* CTA Section */}
       <Section 
-        title="Siap Tingkatkan Layanan Anda?" 
-        subtitle="Bergabunglah dengan ratusan bisnis yang menggunakan GiliranKu untuk mengelola operasi harian dan pengalaman pelanggan."
+        title="Ready to Enhance Your Service?" 
+        subtitle="Join hundreds of businesses using GiliranKu to manage daily operations and customer experience."
         className="bg-neutral-900 border-y border-neutral-800"
         titleClassName="text-white"
         subtitleClassName="text-neutral-400"
       >
         <div className="flex justify-center">
           <CTA variant="secondary" showIcon={true}>
-            Unduh GiliranKu
+            Download GiliranKu
           </CTA>
         </div>
       </Section>

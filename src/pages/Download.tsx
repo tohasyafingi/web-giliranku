@@ -18,21 +18,21 @@ export function Download() {
   return (
     <>
       <Helmet>
-        <title>Unduh {appName} | Android & iOS</title>
-        <meta name="description" content={`Unduh ${appName} untuk Android dan iOS. ${tagline}.`} />
-        <meta property="og:title" content={`Unduh ${appName}`} />
-        <meta property="og:description" content={`Unduh ${appName} untuk Android dan iOS. ${tagline}.`} />
+        <title>Download {appName} | Android & iOS</title>
+        <meta name="description" content={`Download ${appName} for Android and iOS. ${tagline}.`} />
+        <meta property="og:title" content={`Download ${appName}`} />
+        <meta property="og:description" content={`Download ${appName} for Android and iOS. ${tagline}.`} />
         <meta property="og:type" content="website" />
       </Helmet>
 
       <section className="bg-white px-4 pt-24 pb-16 sm:px-6 sm:pt-32 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-            Dapatkan GiliranKu di <br className="hidden sm:block" />
-            <span className="text-primary-600">Perangkat Anda.</span>
+            Get GiliranKu on <br className="hidden sm:block" />
+            <span className="text-primary-600">your device.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-neutral-500 leading-relaxed">
-            Tetap terhubung dan kelola antrean dari mana saja. Unduh aplikasi mobile kami atau gunakan dasbor web.
+            Stay connected and manage queues from anywhere. Download our mobile app or use the web dashboard.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export function Download() {
                 <Monitor size={40} />
               </div>
               <h2 className="relative mt-8 text-2xl font-bold text-neutral-900">Android</h2>
-              <p className="relative mt-2 text-neutral-500 text-center">Dioptimalkan untuk ponsel dan tablet.</p>
+              <p className="relative mt-2 text-neutral-500 text-center">Optimized for phones and tablets.</p>
               <span className="relative mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-900 px-8 py-3 text-sm font-bold text-white transition-all hover:bg-neutral-800 active:scale-95 group-hover:bg-primary-600">
                 Get on Play Store
               </span>
@@ -68,7 +68,7 @@ export function Download() {
                 <Apple size={40} />
               </div>
               <h2 className="relative mt-8 text-2xl font-bold text-neutral-900">iOS</h2>
-              <p className="relative mt-2 text-neutral-500 text-center">Segera hadir di iPhone dan iPad.</p>
+              <p className="relative mt-2 text-neutral-500 text-center">Coming soon to iPhone and iPad.</p>
               <span className="relative mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-900 px-8 py-3 text-sm font-bold text-white transition-all hover:bg-neutral-800 active:scale-95">
                 App Store
               </span>
@@ -81,8 +81,8 @@ export function Download() {
               <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-white text-neutral-400 shadow-sm border border-neutral-100">
                 <Monitor size={40} />
               </div>
-              <h2 className="mt-8 text-2xl font-bold text-neutral-400">Dasbor Web</h2>
-              <p className="mt-2 text-neutral-400 text-center">Kelola semuanya dari browser Anda.</p>
+              <h2 className="mt-8 text-2xl font-bold text-neutral-400">Web Dashboard</h2>
+              <p className="mt-2 text-neutral-400 text-center">Manage everything from your browser.</p>
               <span className="mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-200 px-8 py-3 text-sm font-bold text-neutral-400 cursor-not-allowed">
                 Web Access
               </span>
@@ -95,17 +95,17 @@ export function Download() {
             </div>
             <div className="grid gap-8 p-8 md:grid-cols-2">
                <div>
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-neutral-400">Rilis Saat Ini</h4>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-neutral-400">Current Release</h4>
                   <div className="mt-4 flex items-center gap-4">
                      <span className="text-3xl font-extrabold text-primary-600">{appVersion}</span>
                      <span className="px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-xs font-bold border border-primary-100">Stable</span>
                   </div>
                   <p className="mt-4 text-sm text-neutral-500 leading-relaxed">
-                    Termasuk sinkronisasi real-time, dukungan multi-bisnis, dan notifikasi otomatis.
+                    Includes real-time synchronization, multi-business support, and automatic notifications.
                   </p>
                </div>
                <div>
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-neutral-400">Persyaratan Sistem</h4>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-neutral-400">System Requirements</h4>
                   <ul className="mt-4 space-y-3">
                     {minRequirements.map((req, i) => (
                       <li key={i} className="flex items-start gap-3 text-sm text-neutral-600">

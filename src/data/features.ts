@@ -18,42 +18,42 @@ export interface FeatureItem {
 export const featuresData: FeatureItem[] = [
   {
     id: 'booking',
-    title: 'Pemesanan & Reservasi Layanan',
-    description: 'Pesan layanan sebelum tiba dan hindari antrean.',
+    title: 'Service Booking & Reservations',
+    description: 'Book services before arrival and avoid queues.',
     longDescription:
-      'Pengguna dapat menjelajah layanan tersedia, memilih slot waktu, dan mengonfirmasi reservasi langsung dari aplikasi. Kurangi ketidakhadiran dengan pengingat dan penjadwalan ulang yang mudah.',
+      'Users can browse available services, select a time slot, and confirm reservations directly from the app. Reduce no-shows with reminders and easy rescheduling.',
     icon: CalendarCheck,
   },
   {
     id: 'queue-tracking',
-    title: 'Pelacakan Antrian Real-Time',
-    description: 'Lihat posisi antrean Anda secara real-time dari perangkat.',
+    title: 'Real-Time Queue Tracking',
+    description: 'See your queue position in real time from your device.',
     longDescription:
-      'Lihat posisi Anda di antrean dan perkiraan waktu tunggu. Status antrean diperbarui otomatis sehingga Anda bisa merencanakan waktu dengan lebih baik.',
+      'View your place in line and estimated wait time. Queue status updates automatically so you can plan your time better.',
     icon: Radio,
   },
   {
     id: 'notifications',
-    title: 'Notifikasi Saat Giliran Anda',
-    description: 'Dapatkan pemberitahuan saat giliran Anda hampir tiba.',
+    title: 'Turn Notifications',
+    description: 'Receive alerts when your turn is about to arrive.',
     longDescription:
-      'Jangan lewatkan giliran. Terima notifikasi saat nomor Anda dipanggil, sehingga Anda bisa kembali tepat waktu tanpa menunggu di lokasi.',
+      'Never miss your turn. Get notified when your number is called so you can return promptly without waiting on-site.',
     icon: Bell,
   },
   {
     id: 'admin-dashboard',
-    title: 'Dasbor Admin',
-    description: 'Panggil nomor, kelola layanan, dan atur jam operasional.',
+    title: 'Admin Dashboard',
+    description: 'Call numbers, manage services, and set operating hours.',
     longDescription:
-      'Admin dapat memanggil nomor antrean, menambah atau mengedit layanan, mengatur jam buka, dan mengelola staf. Kontrol penuh atas alur antrean dan konfigurasi layanan.',
+      'Admins can call queue numbers, add or edit services, set opening hours, and manage staff. Full control over queue flow and service configuration.',
     icon: LayoutDashboard,
   },
   {
     id: 'analytics',
-    title: 'Riwayat & Analitik',
-    description: 'Lihat riwayat transaksi dan laporan sederhana.',
+    title: 'History & Analytics',
+    description: 'View transaction history and simple reports.',
     longDescription:
-      'Akses riwayat pemesanan dan antrean, lihat analitik dasar, dan ekspor laporan. Pahami jam sibuk dan tingkatkan layanan.',
+      'Access booking and queue history, view basic analytics, and export reports. Understand peak times and improve service.',
     icon: BarChart3,
   },
 ]
