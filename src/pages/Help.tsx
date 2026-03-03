@@ -50,54 +50,59 @@ export function Help() {
             <Section containerClassName="max-w-3xl" className="py-8 md:py-12">
               <div id="help-main">
                 <section id="general" aria-labelledby="general-heading" className="mb-8">
-                  <h2 id="general-heading" className="text-2xl font-bold text-neutral-900 mb-4">General Information</h2>
-                  <p className="text-neutral-600">Application: {appName} — Version: {import.meta.env.VITE_APP_VERSION || '1.0.0'}</p>
-                </section>
-
-                <section id="customer" aria-labelledby="customer-heading" className="mb-8">
-                  <h2 id="customer-heading" className="text-2xl font-bold text-neutral-900 mb-4">Customer Guide</h2>
-                  <ul className="list-disc list-inside text-neutral-600 space-y-2">
-                    <li><strong>Registration & Sign-in:</strong> choose "Register" to create a new account or "Login" if you already have an account. Select the Customer role during registration.</li>
-                    <li><strong>Password reset:</strong> use the "Forgot password" option on the Login screen to receive reset instructions via email.</li>
-                    <li><strong>Finding merchants:</strong> use the Home screen to browse nearby merchants; tap a merchant to view services and reviews.</li>
-                    <li><strong>Booking a service:</strong> select a service on the Merchant Detail screen and confirm your booking to obtain a queue number.</li>
-                    <li><strong>Viewing or cancelling queues:</strong> open My Queue to view your active queues and position. Cancel from the queue details if permitted by the merchant.</li>
-                    <li><strong>History & notifications:</strong> view past bookings in History and manage notifications in the Notifications screen.</li>
-                    <li><strong>Updating profile:</strong> edit your profile from the Profile or Account Settings screen.</li>
-                    <li><strong>Closing an account:</strong> request account deletion from Account Settings — this action is permanent.</li>
+                  <h2 id="general-heading" className="text-2xl font-bold text-neutral-900 mb-3">General Information</h2>
+                  <ul className="list-disc list-inside text-neutral-600">
+                    <li>App: {appName}</li>
+                    <li>Version: {import.meta.env.VITE_APP_VERSION || '1.0.2'}</li>
                   </ul>
                 </section>
 
-                <section id="merchant" aria-labelledby="merchant-heading" className="mb-8">
-                  <h2 id="merchant-heading" className="text-2xl font-bold text-neutral-900 mb-4">Merchant / Admin Guide</h2>
-                  <ul className="list-disc list-inside text-neutral-600 space-y-2">
-                    <li><strong>Registration & Sign-in:</strong> select the Merchant role during registration and provide your business information.</li>
-                    <li><strong>Dashboard:</strong> access a summary of queues and shortcuts for queue management.</li>
-                    <li><strong>Managing services:</strong> add, edit, or remove services from the Services section.</li>
-                    <li><strong>Queue Console:</strong> use Next, Hold, or Complete controls to manage customers in the queue.</li>
-                    <li><strong>Reports:</strong> review usage metrics and service performance in the Reports section.</li>
-                  </ul>
+                <section id="creating-account" aria-labelledby="creating-account-heading" className="mb-8">
+                  <h2 id="creating-account-heading" className="text-2xl font-bold text-neutral-900 mb-3">Creating an Account</h2>
+                  <ol className="list-decimal list-inside text-neutral-600 space-y-2">
+                    <li>Open the Login screen and tap "Register" to create a new account.</li>
+                    <li>Enter your full name, a valid email address, and a password. Ensure you can access the email for verification.</li>
+                    <li>The app generates a username automatically.</li>
+                    <li>Registration creates a Customer account. Merchants should use the "Open Merchant" flow after signing in.</li>
+                  </ol>
                 </section>
 
-                <section id="technical" aria-labelledby="technical-heading" className="mb-8">
-                  <h2 id="technical-heading" className="text-2xl font-bold text-neutral-900 mb-4">Technical Issues</h2>
-                  <p className="text-neutral-600">Update the application to the latest version, restart the app, or reinstall if necessary. If the issue persists, attach screenshots and reproduction steps when contacting support.</p>
+                <section id="email-verification" aria-labelledby="email-verification-heading" className="mb-8">
+                  <h2 id="email-verification-heading" className="text-2xl font-bold text-neutral-900 mb-3">Email Verification (Required)</h2>
+                  <p className="text-neutral-600">After registration we send a verification email. You must verify your email before using most features.</p>
+                  <p className="text-neutral-600">If you do not receive the email, open Login and attempt sign-in — the app will show your email as unverified and offer a resend option. Resending requires your password for security. Check Spam/Promotions if the link appears missing or expired.</p>
                 </section>
 
-                <section id="other" aria-labelledby="other-heading" className="mb-8">
-                  <h2 id="other-heading" className="text-2xl font-bold text-neutral-900 mb-4">Other Questions</h2>
-                  <ul className="list-disc list-inside text-neutral-600 space-y-2">
-                    <li><strong>Feature requests:</strong> submit a brief description, use case, and benefits.</li>
-                    <li><strong>Reporting abuse:</strong> use the Report feature on the Merchant Detail screen or provide full evidence to support when contacting support.</li>
-                  </ul>
+                <section id="sign-in" aria-labelledby="sign-in-heading" className="mb-8">
+                  <h2 id="sign-in-heading" className="text-2xl font-bold text-neutral-900 mb-3">Sign In</h2>
+                  <p className="text-neutral-600">Sign in using your email or username and password. If your email isn't verified, sign-in will be blocked. Use "Forgot Password" to receive reset instructions via email.</p>
                 </section>
 
-                <section id="contact" aria-labelledby="contact-heading">
-                  <h2 id="contact-heading" className="text-2xl font-bold text-neutral-900 mb-4">Support Contact</h2>
-                  <div className="rounded-lg border border-neutral-100 bg-neutral-50 p-4">
-                    <p className="text-neutral-600 mb-4">If the guides above do not resolve your issue, please contact our support team including full information (role, display name, user/merchant ID, screenshots, and reproduction steps). You can reach support via the in-app Support section or the contact form on our website.</p>
-                    <p className="italic text-neutral-400">Support contact is available through the app or website.</p>
-                  </div>
+                <section id="forgot-password" aria-labelledby="forgot-password-heading" className="mb-8">
+                  <h2 id="forgot-password-heading" className="text-2xl font-bold text-neutral-900 mb-3">Forgot Password</h2>
+                  <p className="text-neutral-600">From Login choose "Forgot Password", enter your registered email, and follow the email instructions. If you do not receive the reset email, check your Spam folder and ensure the email entered is correct.</p>
+                </section>
+
+                <section id="becoming-merchant" aria-labelledby="becoming-merchant-heading" className="mb-8">
+                  <h2 id="becoming-merchant-heading" className="text-2xl font-bold text-neutral-900 mb-3">Becoming a Merchant (Account Promotion)</h2>
+                  <p className="text-neutral-600">Flow: register and sign in as a Customer first. From Profile choose "Open Merchant" and complete business details (name, address, opening hours, services). The app creates a business document and updates your profile locally. Additional verification or activation may be required by admins.</p>
+                </section>
+
+                <section id="managing-queues" aria-labelledby="managing-queues-heading" className="mb-8">
+                  <h2 id="managing-queues-heading" className="text-2xl font-bold text-neutral-900 mb-3">Managing Queues (for Merchant/Admin)</h2>
+                  <p className="text-neutral-600">Open the Dashboard or Queue Console to view customer queues, numbers, and statuses. Use Next, Hold, or Complete controls to update customer statuses. Manage services via the Services page — add or edit duration, capacity, and pricing as needed.</p>
+                </section>
+
+                <section id="delete-account" aria-labelledby="delete-account-heading" className="mb-8">
+                  <h2 id="delete-account-heading" className="text-2xl font-bold text-neutral-900 mb-3">Delete Account (Permanent)</h2>
+                  <p className="text-neutral-600">Location: Profile → Account → Delete Account. You will be prompted to re-authenticate (email and password) to confirm identity. The app attempts to remove your user record and delete your account from the authentication service.</p>
+                  <p className="text-neutral-600">Limitations: some server-side data (files in remote storage, admin-owned entities, or data created by others referencing yours) may not be removable by the client. For additional removal requests, contact support with account details and items to remove. This action is permanent.</p>
+                </section>
+
+                <section id="technical" aria-labelledby="technical-heading">
+                  <h2 id="technical-heading" className="text-2xl font-bold text-neutral-900 mb-3">Technical Issues &amp; Support</h2>
+                  <p className="text-neutral-600">Start with basic troubleshooting: update the app, fully close it, then reopen. If the issue persists, try reinstalling.</p>
+                  <p className="text-neutral-600">Collect helpful information: reproduction steps, affected screen/feature, error messages, and screenshots. Use the in-app contact feature or support channels listed in the app to reach support.</p>
                 </section>
               </div>
             </Section>

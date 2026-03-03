@@ -36,7 +36,7 @@ export function TermsOfService() {
       <header className="bg-white px-4 pt-20 pb-8 sm:px-6 sm:pt-28 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-neutral-900">Terms of Service — GiliranKu</h1>
-          <p className="mx-auto mt-3 text-sm text-neutral-500">Effective Date: 25 February 2026</p>
+          <p className="mx-auto mt-3 text-sm text-neutral-500">Effective Date: 5 March 2026</p>
         </div>
       </header>
 
@@ -49,67 +49,94 @@ export function TermsOfService() {
           <article className="order-1 md:order-2">
             <Section containerClassName="max-w-3xl" className="py-8 md:py-12">
               <div id="terms-content">
-                <section id="acceptance" aria-labelledby="acceptance-heading" className="mb-8">
-                  <h2 id="acceptance-heading" className="text-2xl font-bold text-neutral-900 mb-3">1. Acceptance of Terms</h2>
-                  <p className="text-neutral-600">By using the GiliranKu App you agree to these Terms of Service. If you do not agree, please do not use the App.</p>
+
+                <section id="introduction" aria-labelledby="intro-heading" className="mb-8">
+                  <h2 id="intro-heading" className="text-2xl font-bold text-neutral-900 mb-3">Introduction</h2>
+                  <p className="text-neutral-600">Welcome to {appName}. These Terms of Service ("Terms") govern your access to and use of the {appName} mobile application and related services. By downloading, accessing or using the App, you agree to these Terms. If you do not agree, do not use the App.</p>
                 </section>
 
                 <section id="definitions" aria-labelledby="definitions-heading" className="mb-8">
-                  <h2 id="definitions-heading" className="text-2xl font-bold text-neutral-900 mb-3">2. Definitions</h2>
+                  <h2 id="definitions-heading" className="text-2xl font-bold text-neutral-900 mb-3">Definitions</h2>
                   <ul className="list-disc list-inside text-neutral-600 space-y-2">
-                    <li><strong>"App":</strong> GiliranKu and related services.</li>
-                    <li><strong>"User":</strong> an individual or entity using the App.</li>
+                    <li>"User": an individual or entity that registers for or uses the App.</li>
+                    <li>"Merchant": a business owner who uses admin features to manage queues or services.</li>
+                    <li>"Services": features provided through the App including queue management, booking, push notifications, admin dashboards.</li>
                   </ul>
                 </section>
 
-                <section id="services" aria-labelledby="services-heading" className="mb-8">
-                  <h2 id="services-heading" className="text-2xl font-bold text-neutral-900 mb-3">3. Services</h2>
-                  <p className="text-neutral-600">The App provides queue management, service booking, notifications, and other features described in the App.</p>
+                <section id="scope" aria-labelledby="scope-heading" className="mb-8">
+                  <h2 id="scope-heading" className="text-2xl font-bold text-neutral-900 mb-3">Scope of Services</h2>
+                  <p className="text-neutral-600">{appName} provides queue and booking management tools for merchants, push notifications for queue reminders, and administrative features. Features may change over time.</p>
                 </section>
 
-                <section id="account" aria-labelledby="account-heading" className="mb-8">
-                  <h2 id="account-heading" className="text-2xl font-bold text-neutral-900 mb-3">4. User Accounts</h2>
-                  <p className="text-neutral-600">Some features require an account. You are responsible for keeping credentials confidential and for activity on your account.</p>
+                <section id="eligibility" aria-labelledby="eligibility-heading" className="mb-8">
+                  <h2 id="eligibility-heading" className="text-2xl font-bold text-neutral-900 mb-3">Eligibility</h2>
+                  <p className="text-neutral-600">You must meet the minimum age required by law. If using the App on behalf of an entity, you represent you have authority to bind that entity to these Terms.</p>
                 </section>
 
-                <section id="prohibitions" aria-labelledby="prohibitions-heading" className="mb-8">
-                  <h2 id="prohibitions-heading" className="text-2xl font-bold text-neutral-900 mb-3">5. User Obligations and Prohibitions</h2>
-                  <p className="text-neutral-600">Users must not use the App for illegal activities, distribute harmful content, attempt unauthorized access, or disrupt service operations.</p>
+                <section id="accounts" aria-labelledby="accounts-heading" className="mb-8">
+                  <h2 id="accounts-heading" className="text-2xl font-bold text-neutral-900 mb-3">Accounts and Security</h2>
+                  <p className="text-neutral-600">Some features require an account. You are responsible for keeping credentials confidential and for activity under your account. Notify us promptly of unauthorized use.</p>
                 </section>
 
-                <section id="ip" aria-labelledby="ip-heading" className="mb-8">
-                  <h2 id="ip-heading" className="text-2xl font-bold text-neutral-900 mb-3">6. Intellectual Property</h2>
-                  <p className="text-neutral-600">All content, trademarks, and materials in the App are owned or licensed to the developer. Users are granted a limited, non-exclusive license to use the App under these Terms.</p>
+                <section id="merchant-obligations" aria-labelledby="merchant-obligations-heading" className="mb-8">
+                  <h2 id="merchant-obligations-heading" className="text-2xl font-bold text-neutral-900 mb-3">Merchant Obligations</h2>
+                  <p className="text-neutral-600">Merchants are responsible for accuracy of business information, operating hours, services offered, and compliance with local laws related to business operations and customer data.</p>
+                </section>
+
+                <section id="user-content" aria-labelledby="user-content-heading" className="mb-8">
+                  <h2 id="user-content-heading" className="text-2xl font-bold text-neutral-900 mb-3">User Content</h2>
+                  <p className="text-neutral-600">You are responsible for content you upload or share (profile names, photos, business details). By submitting content you grant us a limited, non-exclusive, royalty-free license to use it to operate and improve the Services.</p>
+                </section>
+
+                <section id="prohibited" aria-labelledby="prohibited-heading" className="mb-8">
+                  <h2 id="prohibited-heading" className="text-2xl font-bold text-neutral-900 mb-3">Prohibited Conduct</h2>
+                  <p className="text-neutral-600">Do not use the App for unlawful activities, access another user's account without authorization, upload malware or offensive content, or interfere with the Services.</p>
                 </section>
 
                 <section id="payments" aria-labelledby="payments-heading" className="mb-8">
-                  <h2 id="payments-heading" className="text-2xl font-bold text-neutral-900 mb-3">7. Payments and Refunds</h2>
-                  <p className="text-neutral-600">If paid features exist, payment and refund terms will be provided at purchase and are subject to the payment provider's policies.</p>
+                  <h2 id="payments-heading" className="text-2xl font-bold text-neutral-900 mb-3">Payments and Paid Services</h2>
+                  <p className="text-neutral-600">The App does not currently process payments directly. If paid features are offered, payments will be processed through third-party providers and terms will be presented at purchase.</p>
+                </section>
+
+                <section id="third-party" aria-labelledby="third-party-heading" className="mb-8">
+                  <h2 id="third-party-heading" className="text-2xl font-bold text-neutral-900 mb-3">Third-Party Services</h2>
+                  <p className="text-neutral-600">The App relies on third-party services (e.g., Firebase, Cloudinary). Your use of those services is subject to their terms and privacy policies.</p>
+                </section>
+
+                <section id="ip" aria-labelledby="ip-heading" className="mb-8">
+                  <h2 id="ip-heading" className="text-2xl font-bold text-neutral-900 mb-3">Intellectual Property</h2>
+                  <p className="text-neutral-600">All content, trademarks, logos and materials are owned by us or licensors. You receive a limited, non-transferable license to use the App in accordance with these Terms.</p>
+                </section>
+
+                <section id="disclaimer" aria-labelledby="disclaimer-heading" className="mb-8">
+                  <h2 id="disclaimer-heading" className="text-2xl font-bold text-neutral-900 mb-3">Disclaimer of Warranties</h2>
+                  <p className="text-neutral-600">The App is provided "as is" and "as available" without warranties. We do not guarantee uninterrupted or error-free operation.</p>
                 </section>
 
                 <section id="liability" aria-labelledby="liability-heading" className="mb-8">
-                  <h2 id="liability-heading" className="text-2xl font-bold text-neutral-900 mb-3">8. Limitation of Liability</h2>
-                  <p className="text-neutral-600">To the extent permitted by law, the developer is not liable for indirect, incidental, or consequential damages arising from use of the App.</p>
+                  <h2 id="liability-heading" className="text-2xl font-bold text-neutral-900 mb-3">Limitation of Liability</h2>
+                  <p className="text-neutral-600">To the maximum extent permitted by law, we are not liable for indirect, incidental, consequential, or punitive damages arising from your use of the App.</p>
                 </section>
 
-                <section id="indemnity" aria-labelledby="indemnity-heading" className="mb-8">
-                  <h2 id="indemnity-heading" className="text-2xl font-bold text-neutral-900 mb-3">9. Indemnification</h2>
-                  <p className="text-neutral-600">You agree to indemnify the developer against claims arising from your breach of these Terms or unlawful use of the App.</p>
+                <section id="indemnification" aria-labelledby="indemnification-heading" className="mb-8">
+                  <h2 id="indemnification-heading" className="text-2xl font-bold text-neutral-900 mb-3">Indemnification</h2>
+                  <p className="text-neutral-600">You agree to indemnify and hold us harmless from claims, liabilities, damages and expenses arising from your breach of these Terms, your use of the App, or violation of third-party rights.</p>
                 </section>
 
-                <section id="termination" aria-labelledby="termination-heading" className="mb-8">
-                  <h2 id="termination-heading" className="text-2xl font-bold text-neutral-900 mb-3">10. Termination</h2>
-                  <p className="text-neutral-600">The developer may suspend or terminate access if you breach the Terms or for security/operational reasons. You may close your account following the App's procedures.</p>
+                <section id="suspension" aria-labelledby="suspension-heading" className="mb-8">
+                  <h2 id="suspension-heading" className="text-2xl font-bold text-neutral-900 mb-3">Suspension and Termination</h2>
+                  <p className="text-neutral-600">We may suspend or terminate access if you violate these Terms or to protect security/operations. You may close your account using in-app procedures where available.</p>
                 </section>
 
                 <section id="changes" aria-labelledby="changes-heading" className="mb-8">
-                  <h2 id="changes-heading" className="text-2xl font-bold text-neutral-900 mb-3">11. Changes to Services and Terms</h2>
-                  <p className="text-neutral-600">The developer may change services or the Terms at any time. Changes will be published; continuing to use the App after changes means you accept them.</p>
+                  <h2 id="changes-heading" className="text-2xl font-bold text-neutral-900 mb-3">Changes to the Terms</h2>
+                  <p className="text-neutral-600">We may update these Terms. Material changes will be notified via the App or email; continued use after notice constitutes acceptance.</p>
                 </section>
 
-                <section id="law" aria-labelledby="law-heading" className="mb-8">
-                  <h2 id="law-heading" className="text-2xl font-bold text-neutral-900 mb-3">12. Governing Law</h2>
-                  <p className="text-neutral-600">These Terms are governed by the laws of the Republic of Indonesia. Disputes should be resolved through negotiation; if unsuccessful, they may be brought before the competent courts.</p>
+                <section id="additional" aria-labelledby="additional-heading">
+                  <h2 id="additional-heading" className="text-2xl font-bold text-neutral-900 mb-3">Additional Terms</h2>
+                  <p className="text-neutral-600">Privacy: our processing of personal data is governed by the Privacy Policy available at PRIVACY_POLICY.md. Governing law: these Terms are governed by the laws of the Republic of Indonesia. Dispute resolution: attempt negotiation; if unresolved, disputes may be submitted to competent Indonesian courts.</p>
                 </section>
               </div>
             </Section>

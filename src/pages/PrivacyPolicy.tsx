@@ -36,7 +36,7 @@ export function PrivacyPolicy() {
       <header className="bg-white px-4 pt-20 pb-8 sm:px-6 sm:pt-28 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-neutral-900">Privacy Policy — {appName}</h1>
-          <p className="mx-auto mt-3 text-sm text-neutral-500">Effective Date: 25 February 2026</p>
+          <p className="mx-auto mt-3 text-sm text-neutral-500">Effective Date: 5 March 2026</p>
         </div>
       </header>
 
@@ -49,76 +49,100 @@ export function PrivacyPolicy() {
           <article className="order-1 md:order-2">
             <Section containerClassName="max-w-3xl" className="py-8 md:py-12">
               <div id="policy-content">
+
                 <section id="introduction" aria-labelledby="intro-heading" className="mb-8">
-                  <h2 id="intro-heading" className="text-2xl font-bold text-neutral-900 mb-3">1. Introduction</h2>
-                  <p className="text-neutral-600">We (the developers of the {appName} application) respect your privacy. This policy explains how we collect, use, store, and protect your personal data.</p>
+                  <h2 id="intro-heading" className="text-2xl font-bold text-neutral-900 mb-3">Introduction</h2>
+                  <p className="text-neutral-600">We, the operators of the {appName} application ("we" or "GiliranKu"), respect your privacy and are committed to protecting the personal data you provide. This Privacy Policy explains the types of data we collect, how we use it, your rights, and how to make requests related to your data.</p>
                 </section>
 
-                <section id="data-collected" aria-labelledby="data-heading" className="mb-8">
-                  <h2 id="data-heading" className="text-2xl font-bold text-neutral-900 mb-3">2. Data We Collect</h2>
+                {/* <section id="data-controller" aria-labelledby="data-controller-heading" className="mb-8">
+                  <h2 id="data-controller-heading" className="text-2xl font-bold text-neutral-900 mb-3">Data Controller and Contact</h2>
+                  <p className="text-neutral-600">Data controller: <em>(not specified)</em></p>
+                  <p className="text-neutral-600">Contact: <em>(not specified)</em></p>
+                </section> */}
+
+                <section id="types" aria-labelledby="types-heading" className="mb-8">
+                  <h2 id="types-heading" className="text-2xl font-bold text-neutral-900 mb-3">Types of Data We Collect</h2>
                   <ul className="list-disc list-inside text-neutral-600 space-y-2">
-                    <li><strong>Information you provide:</strong> name, email address, phone number, profile photo, and other profile details supplied during registration.</li>
-                    <li><strong>Usage data:</strong> activity logs, features used, and session duration.</li>
-                    <li><strong>Technical data:</strong> device type, operating system, application version, device identifiers, and aggregated IP addresses.</li>
-                    <li><strong>Location data:</strong> only if you grant location permission for certain features.</li>
-                    <li><strong>Payment data:</strong> processed by third-party providers; we do not store card details directly except through secure providers.</li>
+                    <li>Identity data: name, username, profile photo.</li>
+                    <li>Contact data: email address, phone number.</li>
+                    <li>Account and profile data: information you add to your profile.</li>
+                    <li>Usage data: application activity logs, features used, session duration.</li>
+                    <li>Technical data: device type, model, OS, app version, device identifiers, aggregated IPs.</li>
+                    <li>Location data: only if you grant location permission.</li>
+                    <li>Payment data: processed by third-party providers; we do not store card details on our servers except via secure providers.</li>
                   </ul>
+                </section>
+
+                <section id="source" aria-labelledby="source-heading" className="mb-8">
+                  <h2 id="source-heading" className="text-2xl font-bold text-neutral-900 mb-3">Source of Data</h2>
+                  <p className="text-neutral-600">We collect data directly from you (during registration or feature use), automatically through app usage, and sometimes from third-party service providers acting on your behalf.</p>
                 </section>
 
                 <section id="purpose" aria-labelledby="purpose-heading" className="mb-8">
-                  <h2 id="purpose-heading" className="text-2xl font-bold text-neutral-900 mb-3">3. Purpose of Processing</h2>
+                  <h2 id="purpose-heading" className="text-2xl font-bold text-neutral-900 mb-3">Purpose and Legal Basis for Processing</h2>
                   <ul className="list-disc list-inside text-neutral-600 space-y-2">
-                    <li>To provide and operate the Application services.</li>
-                    <li>Account authentication and account-related communications.</li>
-                    <li>To deliver important service-related notifications.</li>
-                    <li>Analytics for service improvement and personalization.</li>
-                    <li>Customer support and issue resolution.</li>
+                    <li>Provide and operate the application services (performance of a contract).</li>
+                    <li>Authentication, account verification, and account-related communications (performance of a contract / legitimate interests).</li>
+                    <li>Delivery of service-related notifications (consent or legitimate interests).</li>
+                    <li>Analytics and service improvement (legitimate interests).</li>
+                    <li>Security enforcement, fraud prevention, and legal compliance (compliance with legal obligations / legitimate interests).</li>
                   </ul>
                 </section>
 
-                <section id="legal-basis" aria-labelledby="legal-heading" className="mb-8">
-                  <h2 id="legal-heading" className="text-2xl font-bold text-neutral-900 mb-3">4. Legal Basis for Processing</h2>
-                  <p className="text-neutral-600">Processing is based on your consent, performance of a contract, compliance with legal obligations, or our legitimate interests (e.g., fraud prevention).</p>
+                <section id="third-parties" aria-labelledby="third-parties-heading" className="mb-8">
+                  <h2 id="third-parties-heading" className="text-2xl font-bold text-neutral-900 mb-3">Third Parties and Data Processors</h2>
+                  <p className="text-neutral-600">We use third-party services. Key providers include:</p>
+                  <ul className="list-disc list-inside text-neutral-600 ml-5">
+                    <li>Firebase (Authentication, Firestore, FCM)</li>
+                    <li>Cloudinary (media storage and transformations)</li>
+                    <li>Analytics and infrastructure providers referenced in code/config</li>
+                  </ul>
                 </section>
 
-                <section id="sharing" aria-labelledby="sharing-heading" className="mb-8">
-                  <h2 id="sharing-heading" className="text-2xl font-bold text-neutral-900 mb-3">5. Data Sharing</h2>
-                  <p className="text-neutral-600">We may share data with service providers (hosting, analytics, payment, notifications), authorities when required, or in connection with business transactions (e.g., acquisitions). We do not sell personal data to third parties for monetization.</p>
+                <section id="international" aria-labelledby="international-heading" className="mb-8">
+                  <h2 id="international-heading" className="text-2xl font-bold text-neutral-900 mb-3">International Transfers</h2>
+                  <p className="text-neutral-600">Your data may be stored and processed outside Indonesia (e.g., Google/Firebase servers). We take reasonable technical and organizational measures to protect data during transfers.</p>
+                </section>
+
+                <section id="retention" aria-labelledby="retention-heading" className="mb-8">
+                  <h2 id="retention-heading" className="text-2xl font-bold text-neutral-900 mb-3">Data Retention</h2>
+                  <p className="text-neutral-600">We retain user data as necessary to provide the service. Profile and account data are retained until you request deletion unless longer retention is required by law. Logs/analytics may be retained in aggregated/anonymized form.</p>
                 </section>
 
                 <section id="security" aria-labelledby="security-heading" className="mb-8">
-                  <h2 id="security-heading" className="text-2xl font-bold text-neutral-900 mb-3">6. Security and Retention</h2>
-                  <p className="text-neutral-600">We implement industry-standard technical and organizational measures to protect data. Data is retained only as necessary for the purposes described or to satisfy legal obligations.</p>
+                  <h2 id="security-heading" className="text-2xl font-bold text-neutral-900 mb-3">Data Security</h2>
+                  <p className="text-neutral-600">We implement industry-standard measures (encryption in transit, access controls, internal policies). No system is risk-free; in case of an incident we will investigate and notify authorities and affected users as required.</p>
                 </section>
 
                 <section id="rights" aria-labelledby="rights-heading" className="mb-8">
-                  <h2 id="rights-heading" className="text-2xl font-bold text-neutral-900 mb-3">7. Your Rights</h2>
-                  <p className="text-neutral-600">You have the right to request access, correction, deletion, restriction of processing, to object to processing for direct marketing, and data portability in accordance with applicable law. For requests, please contact the address below.</p>
+                  <h2 id="rights-heading" className="text-2xl font-bold text-neutral-900 mb-3">Data Subject Rights</h2>
+                  <p className="text-neutral-600">You have the right to access, correct, delete, restrict processing, object to processing, and request data portability. To submit a request, contact us at the provided email and include the registered email and request type. We may ask for identity verification.</p>
                 </section>
 
                 <section id="children" aria-labelledby="children-heading" className="mb-8">
-                  <h2 id="children-heading" className="text-2xl font-bold text-neutral-900 mb-3">8. Children</h2>
-                  <p className="text-neutral-600">The Application is not directed to children under 13. If you believe we have collected a child's data without parental consent, please contact us to request removal.</p>
+                  <h2 id="children-heading" className="text-2xl font-bold text-neutral-900 mb-3">Children</h2>
+                  <p className="text-neutral-600">The app is not directed to children under 13. If you believe we've collected a child's data without lawful consent, contact us to report and request removal.</p>
                 </section>
 
                 <section id="cookies" aria-labelledby="cookies-heading" className="mb-8">
-                  <h2 id="cookies-heading" className="text-2xl font-bold text-neutral-900 mb-3">9. Cookies & Similar Technologies</h2>
-                  <p className="text-neutral-600">We and our partners may use cookies, local storage, and similar technologies for technical functions and analytics.</p>
+                  <h2 id="cookies-heading" className="text-2xl font-bold text-neutral-900 mb-3">Cookies &amp; Similar Technologies</h2>
+                  <p className="text-neutral-600">We and partners may use cookies, local storage, and similar technologies for technical functions, preferences, and analytics. On mobile this typically appears as local storage and device identifiers.</p>
                 </section>
 
-                <section id="third-party" aria-labelledby="third-party-heading" className="mb-8">
-                  <h2 id="third-party-heading" className="text-2xl font-bold text-neutral-900 mb-3">10. Third-Party Integrations</h2>
-                  <p className="text-neutral-600">Integrations such as Google Maps, Firebase, or storage/media services are subject to the privacy policies of those providers.</p>
+                <section id="profiling" aria-labelledby="profiling-heading" className="mb-8">
+                  <h2 id="profiling-heading" className="text-2xl font-bold text-neutral-900 mb-3">Profiling and Automated Decisions</h2>
+                  <p className="text-neutral-600">We may use automated analytics for service improvement (recommendations), but we do not use automated decision-making that has a significant legal effect on users.</p>
                 </section>
 
-                <section id="changes" aria-labelledby="changes-heading" className="mb-8">
-                  <h2 id="changes-heading" className="text-2xl font-bold text-neutral-900 mb-3">11. Changes to This Policy</h2>
-                  <p className="text-neutral-600">Changes will be published here; material changes will be communicated via the Application or email.</p>
+                <section id="breach" aria-labelledby="breach-heading" className="mb-8">
+                  <h2 id="breach-heading" className="text-2xl font-bold text-neutral-900 mb-3">Data Breach Handling</h2>
+                  <p className="text-neutral-600">If a breach occurs that risks users' rights, we will investigate promptly and notify relevant authorities and affected users as required by law.</p>
                 </section>
 
-                <section id="contact" aria-labelledby="contact-heading">
-                  <h2 id="contact-heading" className="text-2xl font-bold text-neutral-900 mb-3">12. Contact</h2>
-                  <p className="text-neutral-600">If you have questions or requests regarding personal data, please contact our support team via the in-app Support section or the contact form on our website.</p>
+                <section id="changes" aria-labelledby="changes-heading">
+                  <h2 id="changes-heading" className="text-2xl font-bold text-neutral-900 mb-3">Changes to this Policy</h2>
+                  <p className="text-neutral-600">We may update this policy from time to time. Material changes will be communicated via the app or email; the latest version and effective date will be available in this document.</p>
                 </section>
               </div>
             </Section>

@@ -5,10 +5,10 @@ const appName = import.meta.env.VITE_APP_NAME || 'GiliranKu'
 const tagline = import.meta.env.VITE_APP_TAGLINE || 'Real-Time Queue & Booking System'
 const androidUrl = import.meta.env.VITE_ANDROID_DOWNLOAD_URL || '#'
 const iosUrl = import.meta.env.VITE_IOS_DOWNLOAD_URL || '#'
-const appVersion = import.meta.env.VITE_APP_VERSION || '1.0.0'
+const appVersion = import.meta.env.VITE_APP_VERSION || '1.0.2'
 
 const minRequirements = [
-  'Android 8.0 (API 26) or later',
+  'Android 7.0 (API 24) or later',
   'iOS 14.0 or later',
   'Stable internet connection',
   'Push notifications enabled (optional, for queue alerts)',
